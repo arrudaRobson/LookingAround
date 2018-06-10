@@ -27,18 +27,16 @@ public class FormularioActivity extends AppCompatActivity {
 
         helper = new FormularioHelper(this);
 
-        /*Button botaoSalvar = (Button) findViewById(R.id.formulario_salvar);
+        Button botaoSalvar = (Button) findViewById(R.id.formulario_salvar);
         botaoSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(FormularioActivity.this, "Obrigado por ajudar outros usuários!", Toast.LENGTH_SHORT).show();
-            }
-        });*/
-    }
 
-    public void abrirLista(View view) {
-        Intent cadastro = new Intent(this, ListaBancosActivity.class);
-        startActivity(cadastro);
+                Intent intentLista = new Intent(FormularioActivity.this, ListaBancosActivity.class);
+                startActivity(intentLista);
+            }
+        });
     }
 
     @Override
@@ -52,7 +50,7 @@ public class FormularioActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
-            case R.id.menu_formulario_mapa:
+            case R.id.formulario_salvar:
                 Banco banco = helper.pegaBanco();
                 BancoDAO dao = new BancoDAO(this);
                 dao.insere(banco);

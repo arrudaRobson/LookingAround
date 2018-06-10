@@ -14,7 +14,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     public void abrirMapa(View view) {
-        Intent mapa = new Intent(this, FormularioActivity.class);
+        Intent mapa = new Intent(this, ListaBancosActivity.class);
         startActivity(mapa);
     }
 }

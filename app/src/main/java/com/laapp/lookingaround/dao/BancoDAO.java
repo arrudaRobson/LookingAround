@@ -46,7 +46,7 @@ public class BancoDAO extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery(sql, null);
 
-        List<Banco> bancos = new ArrayList<>();
+        List<Banco> bancos = new ArrayList<Banco>();
         while (c.moveToNext()){
             Banco banco = new Banco();
             banco.setId(c.getLong(c.getColumnIndex("id")));

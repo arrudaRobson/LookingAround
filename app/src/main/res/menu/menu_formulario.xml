@@ -2,9 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.laapp.lookingaround.FormularioActivity">
-    <item android:id="@+id/menu_formulario_mapa"
+    <item android:id="@+id/formulario_salvar"
         android:title="Bancos"
-        android:icon="@drawable/placeholder"
+        android:icon="@drawable/check"
         app:showAsAction="always">
     </item>
 </menu>
