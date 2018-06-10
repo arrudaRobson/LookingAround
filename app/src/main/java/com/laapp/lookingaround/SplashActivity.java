@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Splash extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     private final long timeToWait = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,9 +15,9 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent it = new Intent(Splash.this,LoginActivity.class);
+                Intent it = new Intent(SplashActivity.this,CadastroActivity.class);
                 startActivity(it);
-                Splash.this.finish();
+                SplashActivity.this.finish();
             }
         },timeToWait);
     }

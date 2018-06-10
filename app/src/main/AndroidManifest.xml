@@ -21,8 +21,9 @@
         android:roundIcon="@mipmap/ic_laapp_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name= ".LoginActivity" />
-        <activity android:name=".Splash"
+        <activity android:name=".CadastroActivity" />
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +46,10 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MapaActivity" />
+        <activity android:name=".FormularioActivity" />
+        <activity android:name=".ListaBancosActivity"></activity>
     </application>
 
 </manifest>
