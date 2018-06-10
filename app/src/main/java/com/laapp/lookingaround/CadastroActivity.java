@@ -13,8 +13,8 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
     }
 
-    public void abrirMapa(View view) {
-        Intent mapa = new Intent(this, ListaBancosActivity.class);
-        startActivity(mapa);
+    public void abrirLista(View view) {
+        Intent lista = new Intent(this, ListaBancosActivity.class);
+        startActivity(lista);
     }
 }

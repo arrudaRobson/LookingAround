@@ -37,10 +37,9 @@
         android:id="@+id/formulario_salvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:onClick="abrirLista"
-        android:text="Salvar"
-        android:textColor="#ffffff" />
+        android:background="#ffffff"
+        android:text="Sua opnião é importante"
+        android:textColor="#000000" />
 
 
 </LinearLayout>

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="143dp"
         android:background="@color/colorPrimary"
-        android:onClick="abrirMapa"
+        android:onClick="abrirLista"
         android:text="Entrar"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"

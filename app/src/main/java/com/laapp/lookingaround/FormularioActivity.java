@@ -3,6 +3,7 @@ package com.laapp.lookingaround;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -63,5 +64,10 @@ public class FormularioActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void abrirMapa(View view) {
+        Intent mapa = new Intent(this, MapaActivity.class);
+        startActivity(mapa);
     }
 }

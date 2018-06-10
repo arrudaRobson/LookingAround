@@ -10,6 +10,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.laapp.lookingaround.dao.BancoDAO;
+import com.laapp.lookingaround.model.Banco;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,6 +32,21 @@ public class MapaFragment extends SupportMapFragment implements OnMapReadyCallba
         LatLng uni = retornaCoordenadas("Rua Amador Bueno 389, Santo Amaro, Sao Paulo");
         CameraUpdate update = CameraUpdateFactory.newLatLngZoom(uni, 14);
         googleMap.moveCamera(update);
+
+        BancoDAO bancoDAO = new BancoDAO(getContext());
+        for (Banco banco : bancoDAO.buscaBancos()){
+            LatLng coord = retornaCoordenadas(banco.getEndereco());
+            if (coord != null){
+                MarkerOptions marcador = new MarkerOptions();
+                marcador.position(coord);
+                marcador.title(banco.getNome());
+                marcador.snippet(String.valueOf(banco.getNota()));
+                googleMap.addMarker(marcador);
+
+                bancoDAO.close();
+            }
+        }
+
     }
 
     private LatLng retornaCoordenadas(String endereco){

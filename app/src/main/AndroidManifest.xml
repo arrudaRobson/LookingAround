@@ -49,7 +49,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MapaActivity" />
         <activity android:name=".FormularioActivity" />
-        <activity android:name=".ListaBancosActivity"></activity>
+        <activity android:name=".ListaBancosActivity" />
+        <activity android:name=".PiadasActivity"></activity>
     </application>
 
 </manifest>

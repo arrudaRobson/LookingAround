@@ -40,6 +40,6 @@ public class Banco {
 
     @Override
     public String toString(){
-        return getId() + " - " + getNome();
+        return getId() + " - " + getNome() + " - Avaliação " + getNota();
     }
 }
