@@ -65,9 +65,4 @@ public class FormularioActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void abrirMapa(View view) {
-        Intent mapa = new Intent(this, MapaActivity.class);
-        startActivity(mapa);
-    }
 }

@@ -77,4 +77,5 @@ public class ListaBancosActivity extends AppCompatActivity {
         Intent piadasIntent = new Intent(ListaBancosActivity.this, PiadasActivity.class);
 
     }
+
 }

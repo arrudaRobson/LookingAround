@@ -50,7 +50,7 @@
         <activity android:name=".MapaActivity" />
         <activity android:name=".FormularioActivity" />
         <activity android:name=".ListaBancosActivity" />
-        <activity android:name=".PiadasActivity"></activity>
+        <activity android:name=".PiadasActivity" />
     </application>
 
 </manifest>
